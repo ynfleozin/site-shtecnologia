@@ -9,7 +9,6 @@
   background-position: center;
 }
 
-
 main {
   width: 50%;
 }
@@ -32,7 +31,7 @@ main button {
   font-size: 16px;
 }
 
-main button:hover{
+main button:hover {
   background-color: #1c98d6;
 }
 
@@ -49,7 +48,7 @@ aside p {
 
 .service {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* 2 serviços por linha */
   grid-gap: 20px;
   margin-top: 20px;
 }
@@ -63,7 +62,7 @@ aside p {
   transition: transform 0.3s;
 }
 
-.service-item:hover{
+.service-item:hover {
   transform: translateY(-5px);
   background-color: #1c98d6;
 }
@@ -78,4 +77,47 @@ aside p {
   font-size: 16px;
   color: #333;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .service {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  main button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  aside p {
+    font-size: 1rem;
+  }
+
+  .service-item i {
+    font-size: 30px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+  }
 }

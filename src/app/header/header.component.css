@@ -6,6 +6,71 @@ header {
   justify-content: space-between;
 }
 
+header .mobile-menu{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .mobile-menu button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+header .mobile-menu-list {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: right 0.3s ease;
+  width: 80%;
+  z-index: 1000;
+}
+
+header .mobile-menu-list li {
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header .mobile-menu-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+header .mobile-menu-list li a:hover {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+header .mobile-menu-list.show {
+  right: 0;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
 header .logo img{
   max-width: 150px;
   margin-left: 2rem;
@@ -37,4 +102,29 @@ header nav ul li a{
 header nav ul li a:hover{
   color: var(--cor2);
 }
+
+@media (max-width: 768px) {
+
+  header .logo img{
+    max-width: 120px;
+    padding: 10px;
+  }
+
+  header div p {
+    font-size: 0.8rem;
+  }
+
+  header .mobile-menu {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header .mobile-menu-list.show {
+    display: flex;
+  }
+}
+
 

@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 
-.address{
+.address {
   display: flex;
   gap: 10px;
 }
@@ -29,12 +29,12 @@
   margin-bottom: 5px;
 }
 
-.number{
+.number {
   display: flex;
   gap: 10px;
 }
 
-.number i, .address i{
+.number i, .address i {
   font-size: 1.5rem;
 }
 
@@ -93,4 +93,40 @@ button:hover {
 .terms a {
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h2 {
+    font-size: 1.2em;
+  }
+
+  .contact-info p {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  .terms label {
+    font-size: 0.7em; 
+  }
 }
