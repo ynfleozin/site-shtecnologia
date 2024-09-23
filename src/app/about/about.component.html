@@ -1,0 +1,26 @@
+<section class="about-container">
+  <main>
+    <div>
+      <h2>
+        O backup em nuvem da SH Tecnologia resolve
+        sua necessidade de backup com a
+        garantia de armazenamento dos
+        dados fora de sua empresa.
+      </h2>
+    </div>
+    <div>
+      <button>
+        Saiba mais
+      </button>
+    </div>
+  </main>
+  <aside>
+    <p>Conheça nossos serviços</p>
+    <div class="service">
+      <div *ngFor="let service of services" class="service-item">
+        <i [class]="service.icon"></i>
+        <p>{{ service.title }}</p>
+      </div>
+    </div>
+  </aside>
+</section>

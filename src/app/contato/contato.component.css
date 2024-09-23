@@ -1,0 +1,96 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: var(--cor1);
+  color: white;
+}
+
+.contact-info {
+  width: 45%;
+}
+
+.contact-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.address{
+  display: flex;
+  gap: 10px;
+}
+
+.address p {
+  margin-bottom: 5px;
+}
+
+.number{
+  display: flex;
+  gap: 10px;
+}
+
+.number i, .address i{
+  font-size: 1.5rem;
+}
+
+.contact-form {
+  width: 45%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row input, textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.terms {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terms label {
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+.terms a {
+  color: white;
+  text-decoration: underline;
+}

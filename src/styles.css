@@ -1,0 +1,12 @@
+:root{
+  --cor1: #173792;
+  --cor2: #39a6dd;
+  --cor3: #000000;
+}
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

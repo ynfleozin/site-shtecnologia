@@ -1,0 +1,81 @@
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: url(/assets/images/ImagemContainerOP.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+main {
+  width: 50%;
+}
+
+main h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+  line-height: 1.5;
+}
+
+main button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: var(--cor2);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+main button:hover{
+  background-color: #1c98d6;
+}
+
+aside {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside p {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.service-item {
+  background-color: var(--cor2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-item:hover{
+  transform: translateY(-5px);
+  background-color: #1c98d6;
+}
+
+.service-item i {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
