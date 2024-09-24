@@ -5,6 +5,7 @@
   align-items: center;
   min-height: 90vh;
   text-align: center;
+  padding: 40px;
 }
 
 h2 {
@@ -39,7 +40,7 @@ h2 {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .grid-container {
@@ -54,7 +55,7 @@ h2 {
 
 @media (max-width: 480px) {
   h2 {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 
   .grid-container {
@@ -62,7 +63,7 @@ h2 {
   }
 
   .grid-item {
-    width: 100%;
+    width: 150px;
     height: 120px;
   }
 }
