@@ -33,7 +33,7 @@ header .mobile-menu-list {
   padding: 0;
   margin: 0;
   transition: right 0.3s ease;
-  width: 80%;
+  width: 70%;
   z-index: 1000;
 }
 
@@ -48,13 +48,13 @@ header .mobile-menu-list li {
 header .mobile-menu-list li a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: block;
 }
 
 header .mobile-menu-list li a:hover {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 header .mobile-menu-list.show {

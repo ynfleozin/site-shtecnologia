@@ -24,11 +24,15 @@
   margin-top: 20px;
 }
 
+.address div p{
+  margin: 0;
+}
+
 .address,
 .phone {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .address i,
@@ -116,7 +120,7 @@ button:hover {
 
 @media (max-width: 480px) {
   .contact-info h2 {
-    font-size: 1.4em; 
+    font-size: 1.4em;
   }
 
   .contact-info p {
