@@ -15,7 +15,7 @@ export class AboutComponent {
     { title: 'Cyber Segurança', icon: 'fas fa-shield-alt' },
     { title: 'Terceirização de T.I.', icon: 'fas fa-briefcase' },
     { title: 'Office Cloud', icon: 'fas fa-cloud-upload-alt' },
-    { title: 'Firewall', icon: 'fas fa-firewall' },
+    { title: 'Firewall', icon: 'fa-solid fa-fire' },
   ];
 
 }

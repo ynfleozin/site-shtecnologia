@@ -1,0 +1,23 @@
+section{
+  background-color: #F3F3F5;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: #606060;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+p{
+  color: #606060;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.45;
+}

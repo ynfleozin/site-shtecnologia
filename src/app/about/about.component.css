@@ -22,17 +22,19 @@ main h2 {
 
 main button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
-  color: white;
+  color: #333;
   background-color: var(--cor2);
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 main button:hover {
   background-color: #1c98d6;
+  color: white;
 }
 
 aside {
@@ -48,23 +50,34 @@ aside p {
 
 .service {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 serviços por linha */
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   margin-top: 20px;
 }
 
 .service-item {
   background-color: var(--cor2);
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
+  position: relative;
 }
 
 .service-item:hover {
   transform: translateY(-5px);
   background-color: #1c98d6;
+}
+
+.service-item:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 5px solid white;
 }
 
 .service-item i {
@@ -88,6 +101,10 @@ aside p {
   main {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  main h2{
+    margin-top: 50px;
   }
 
   aside {
