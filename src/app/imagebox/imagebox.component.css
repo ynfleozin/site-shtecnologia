@@ -1,5 +1,7 @@
 section {
   display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 aside {
@@ -10,7 +12,7 @@ aside {
 
 aside img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 div {
@@ -33,4 +35,30 @@ p {
   font-size: 20px;
   line-height: 1.45;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  aside {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

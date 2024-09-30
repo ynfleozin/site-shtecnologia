@@ -1,4 +1,4 @@
-section{
+section {
   background-color: #F3F3F5;
   height: 500px;
   display: flex;
@@ -6,6 +6,7 @@ section{
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 20px; /* Adiciona padding para telas menores */
 }
 
 h2 {
@@ -14,10 +15,36 @@ h2 {
   margin-bottom: 30px;
 }
 
-p{
+p {
   color: #606060;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 20px;
   line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  section {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
