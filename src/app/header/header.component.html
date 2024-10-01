@@ -1,26 +1,32 @@
 <header>
   <div class="logo">
-    <a href="">
-      <img src="assets/images/logo.png" alt="Logo" />
-    </a>
+    <img src="/assets/images/logo.png" alt="Logo SHTecnologia">
   </div>
-  <nav>
-    <ul>
-      <li> <a href="">Home</a> </li>
-      <li> <a href="">Contato</a> </li>
-      <li> <a routerLink="/trabalhe-conosco">Trabalhe Conosco</a> </li>
-      <li> <a href="">Suporte</a> </li>
-    </ul>
-    <div class="mobile-menu">
-      <button id="mobile-menu-button" class="menu-icon">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="mobile-menu-list" class="mobile-menu-list">
-        <li> <a href="">Home</a> </li>
-        <li> <a href="">Contato</a> </li>
-        <li> <a routerLink="/trabalhe-conosco">Trabalhe Conosco</a> </li>
-        <li> <a href="">Suporte</a> </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="interface">
+      <nav class="menu-desktop">
+          <ul>
+              <li><a routerLink="/" class="linknav">Home</a></li>
+              <li><a routerLink="/skills" class="linknav">Contato</a></li>
+              <li><a routerLink="/about" class="linknav">Trabalhe Conosco</a></li>
+              <li><a routerLink="/projects" class="linknav">Suporte</a></li>
+          </ul>
+      </nav>
+      <div class="abrir" id="abrir">
+          <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="menu-mobile" id="menu-mobile">
+          <div class="fechar">
+              <i class="fa-solid fa-xmark" style="cursor: pointer;"></i>
+          </div>
+          <nav>
+              <ul>
+                  <li><a routerLink="/" class="linknav">Home</a></li>
+                  <li><a routerLink="/skills" class="linknav">Contato</a></li>
+                  <li><a routerLink="/about" class="linknav">Trabalhe Conosco</a></li>
+                  <li><a routerLink="/projects" class="linknav">Suporte</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="overlay-menu" id="overlay-menu"></div>
+  </div>
 </header>

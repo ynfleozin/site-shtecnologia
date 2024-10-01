@@ -1,30 +1,31 @@
-import { AfterViewInit, Component, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements AfterViewInit {
-  constructor(private renderer: Renderer2) {}
+export class HeaderComponent implements OnInit {
 
-  ngAfterViewInit() {
-    const mobileMenuButton = this.renderer.selectRootElement('#mobile-menu-button', true);
-    const mobileMenuList = this.renderer.selectRootElement('#mobile-menu-list', true);
-    const mobileMenuLinks = mobileMenuList.querySelectorAll('a');
+  constructor() { }
 
-    this.renderer.listen(mobileMenuButton, 'click', () => {
-      if (mobileMenuList.classList.contains('show')) {
-        this.renderer.removeClass(mobileMenuList, 'show');
-      } else {
-        this.renderer.addClass(mobileMenuList, 'show');
-      }
-    });
+  ngOnInit(): void {
+    const btnMenu = document.getElementById('abrir');
+    const menu = document.getElementById('menu-mobile');
+    const overlay = document.getElementById('overlay-menu');
 
-    mobileMenuLinks.forEach((link: Element) => {
-      this.renderer.listen(link, 'click', () => {
-        this.renderer.removeClass(mobileMenuList, 'show');
+    if (btnMenu && menu && overlay) {
+      btnMenu.addEventListener('click', () => {
+        menu.classList.add('abrir-menu');
       });
-    });
+
+      menu.addEventListener('click', () => {
+        menu.classList.remove('abrir-menu');
+      });
+
+      overlay.addEventListener('click', () => {
+        menu.classList.remove('abrir-menu');
+      });
+    }
   }
 }
