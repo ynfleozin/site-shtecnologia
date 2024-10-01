@@ -56,6 +56,10 @@ form {
   margin-bottom: 15px;
 }
 
+.form-row input{
+  margin: 5px 0;
+}
+
 .form-row input,
 textarea {
   padding: 12px;
@@ -71,6 +75,7 @@ textarea {
 }
 
 button {
+  margin-top: 20px;
   background-color: #333;
   color: white;
   padding: 12px;
@@ -83,21 +88,6 @@ button {
 
 button:hover {
   background-color: #555;
-}
-
-.terms {
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.terms label {
-  font-size: 0.9em;
-  margin-left: 10px;
-}
-
-.terms a {
-  color: white;
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
