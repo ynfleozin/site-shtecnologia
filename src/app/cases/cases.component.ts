@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class CasesComponent {
   cases = [
-    { name: 'Empresa', logo: 'assets/cases/4ls-sistemas.png' },
-    { name: 'Empresa', logo: 'assets/cases/iron.png' },
-    { name: 'Empresa', logo: 'assets/cases/nunes.png' },
-    { name: 'Empresa', logo: 'assets/cases/maxipas.png' },
-    { name: 'Empresa', logo: 'assets/cases/cristalcopo.png' },
-    { name: 'Empresa', logo: 'assets/cases/alfa.png' },
-    { name: 'Empresa', logo: 'assets/cases/upquery.png' },
-    { name: 'Empresa', logo: 'assets/cases/biofitus.png' },
-    { name: 'Empresa', logo: 'assets/cases/biofitus.png' }
+    { name: 'Microsoft Partner', logo: 'assets/images/cases/microsoft-partner.png' },
+    { name: 'Acronis', logo: 'assets/images/cases/acronis.png' },
+    { name: 'Bit Defender', logo: 'assets/images/cases/bitdefender.png' },
+    { name: 'Opsense', logo: 'assets/images/cases/opnsense.png' },
+    { name: 'Microsoft Azure', logo: 'assets/images/cases/microsoft-azure.png' },
+    { name: 'Google', logo: 'assets/images/cases/google.png' },
+    { name: 'Zoho', logo: 'assets/images/cases/zoho.png' },
+    { name: 'Addee', logo: 'assets/images/cases/addee.png' },
+    { name: 'Starti', logo: 'assets/images/cases/starti.png' },
   ];
 }
