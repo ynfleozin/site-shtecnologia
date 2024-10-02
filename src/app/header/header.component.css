@@ -78,7 +78,7 @@ header {
 }
 
 header .logo img {
-  max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+  max-width: 150px;
 }
 
 header .interface {
@@ -137,17 +137,21 @@ button:hover {
   .abrir > i{
     font-size: 30px;
     color: var(--cor2);
-}
+  }
 
-header {
-  justify-content: space-between;
-}
+  header {
+    justify-content: space-between;
+  }
 
-header .interface .abrir{
+  header .interface .abrir{
     font-size: 20px;
-}
+  }
 
-.menu-desktop{
+  header .logo img {
+    max-width: 80px;
+  }
+
+  .menu-desktop{
     display: none;
-}
+  }
 }
