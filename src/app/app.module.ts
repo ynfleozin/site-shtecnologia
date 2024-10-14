@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +13,6 @@ import { ImageboxComponent } from './imagebox/imagebox.component';
 import { ContainerComponent } from './container/container.component';
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +26,12 @@ import { BlogComponent } from './blog/blog.component';
     ContainerComponent,
     TrabalheConoscoComponent,
     HomeComponent,
-    BlogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

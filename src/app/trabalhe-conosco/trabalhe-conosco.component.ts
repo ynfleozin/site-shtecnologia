@@ -8,17 +8,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class TrabalheConoscoComponent {
   trabalhoForm: FormGroup;
+  vagasDisponiveis: string[] = [];
 
   constructor(private fb: FormBuilder) {
+    this.vagasDisponiveis = [];
+
     this.trabalhoForm = this.fb.group({
       nome: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       telefone: ['', Validators.required],
-      endereco: ['', Validators.required],
       estado: ['', Validators.required],
       cidade: ['', Validators.required],
+      vaga: ['', Validators.required],
       mensagem: ['', Validators.required],
-      curriculo: [null] // Para o arquivo do currículo
+      curriculo: [null]
     });
   }
 
