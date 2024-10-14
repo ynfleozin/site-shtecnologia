@@ -13,6 +13,7 @@
   color: var(--cor0);
   font-size: 30px ;
   cursor: pointer;
+  margin-right: 15px;
 }
 
 .menu-mobile{
@@ -73,12 +74,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   background-color: var(--cor3);
 }
 
 header .logo img {
   max-width: 150px;
+  padding: 10px;
 }
 
 header .interface {
@@ -102,7 +104,7 @@ header .interface {
 .menu-desktop ul li:hover, .menu-desktop ul li a:hover {
   color: var(--cor2);
   transition: 0.2s;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .menu-desktop a {

@@ -1,0 +1,11 @@
+<div class="blog-container">
+  <div class="blog-post" *ngFor="let post of blogPosts">
+    <img [src]="post.imageUrl" alt="{{ post.title }}" class="blog-post-image">
+    <div class="blog-post-content">
+      <h2>{{ post.title }}</h2>
+      <p class="author">{{ post.date }}</p>
+      <p class="excerpt">{{ post.content }}</p>
+      <a href="#" class="read-more">Ler mais</a>
+    </div>
+  </div>
+</div>

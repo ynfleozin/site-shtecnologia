@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  background-color: var(--cor1);
+  background-image: url(/assets/images/ImagemContato.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -11,12 +14,13 @@
 }
 
 .contact-info h1 {
+  color: var(--cor2);
   font-size: 1.8em;
   margin-bottom: 15px;
 }
 
 .contact-info p {
-  font-size: 1em;
+  font-size: 1.1rem;
   margin-bottom: 15px;
 }
 
@@ -24,7 +28,7 @@
   margin-top: 20px;
 }
 
-.address div p{
+.address div p {
   margin: 0;
 }
 
@@ -37,6 +41,7 @@
 
 .address i,
 .phone i {
+  color: var(--cor2);
   font-size: 2rem;
   margin-right: 20px;
 }
@@ -56,7 +61,7 @@ form {
   margin-bottom: 15px;
 }
 
-.form-row input{
+.form-row input {
   margin: 5px 0;
 }
 
@@ -76,7 +81,7 @@ textarea {
 
 button {
   margin-top: 20px;
-  background-color: #333;
+  background-color: var(--cor2);
   color: white;
   padding: 12px;
   font-size: 1.1em;
@@ -87,7 +92,7 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #166a94;
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
+import { ScrollService } from '../../assets/services/scrollservice';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,9 @@ import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private scrollService: ScrollService,
+  ) { }
 
   ngOnInit(): void {
     const btnMenu = document.getElementById('abrir');
@@ -27,5 +30,9 @@ export class HeaderComponent implements OnInit {
         menu.classList.remove('abrir-menu');
       });
     }
+  }
+
+  scrollToSection(sectionId: string): void {
+    this.scrollService.navigateAndScroll(sectionId);
   }
 }
