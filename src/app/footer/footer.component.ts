@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../../assets/services/scrollservice';
 
 @Component({
   selector: 'app-footer',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   email = "sh@shtecno.com.br";
+
+  constructor(
+    private scrollService: ScrollService,
+  ){}
+
+  scrollToSection(sectionId: string): void {
+    this.scrollService.navigateAndScroll(sectionId);
+  }
 }
