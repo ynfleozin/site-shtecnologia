@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './privacidade.component.css'
 })
 export class PrivacidadeComponent {
-
+  email = "sh@shtecno.com.br";
 }
