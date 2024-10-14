@@ -15,6 +15,7 @@ import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.co
 import { HomeComponent } from './home/home.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { TermosComponent } from './termos/termos.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TermosComponent } from './termos/termos.component';
     HomeComponent,
     PrivacidadeComponent,
     TermosComponent,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
