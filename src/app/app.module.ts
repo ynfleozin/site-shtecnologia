@@ -13,6 +13,7 @@ import { ImageboxComponent } from './imagebox/imagebox.component';
 import { ContainerComponent } from './container/container.component';
 import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { HomeComponent } from './home/home.component';
+import { PrivacidadeComponent } from './privacidade/privacidade.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HomeComponent } from './home/home.component';
     ContainerComponent,
     TrabalheConoscoComponent,
     HomeComponent,
+    PrivacidadeComponent,
   ],
   imports: [
     BrowserModule,
