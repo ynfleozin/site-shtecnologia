@@ -11,7 +11,6 @@ import { AboutComponent } from './about/about.component';
 import { CasesComponent } from './cases/cases.component';
 import { ImageboxComponent } from './imagebox/imagebox.component';
 import { ContainerComponent } from './container/container.component';
-import { TrabalheConoscoComponent } from './trabalhe-conosco/trabalhe-conosco.component';
 import { HomeComponent } from './home/home.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { TermosComponent } from './termos/termos.component';
@@ -27,7 +26,6 @@ import { PopupComponent } from './popup/popup.component';
     CasesComponent,
     ImageboxComponent,
     ContainerComponent,
-    TrabalheConoscoComponent,
     HomeComponent,
     PrivacidadeComponent,
     TermosComponent,
