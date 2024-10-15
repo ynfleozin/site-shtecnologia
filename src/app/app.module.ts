@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PrivacidadeComponent } from './privacidade/privacidade.component';
 import { TermosComponent } from './termos/termos.component';
 import { PopupComponent } from './popup/popup.component';
+import { SuporteComponent } from './suporte/suporte.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PopupComponent } from './popup/popup.component';
     PrivacidadeComponent,
     TermosComponent,
     PopupComponent,
+    SuporteComponent,
   ],
   imports: [
     BrowserModule,
