@@ -37,7 +37,10 @@ p {
   margin-bottom: 15px;
 }
 
-button{
+a{
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   border: none;
   border-radius: 5px;
   background-color: var(--cor2);
