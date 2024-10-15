@@ -13,7 +13,6 @@ This repository contains the source code for the website developed for **SH Tecn
 
 - **HTML, CSS, and JavaScript**: For building the user interface.
 - **Framework**: Angular
-- **Build Tools**: (specify if using Webpack, Gulp, etc.)
 
 ## Contributing
 
