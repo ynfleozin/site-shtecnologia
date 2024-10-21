@@ -1,7 +1,10 @@
 <section class="about-container">
   <main>
     <div>
-      <h2>
+      <h2 *ngIf="selectedService">
+        {{ selectedService.description }}
+      </h2>
+      <h2 *ngIf="!selectedService">
         O backup em nuvem da SH Tecnologia resolve sua necessidade de backup com
         a garantia de armazenamento dos dados fora de sua empresa.
       </h2>
@@ -10,7 +13,10 @@
   <aside>
     <p>Conheça nossos serviços</p>
     <div class="service">
-      <div *ngFor="let service of services" class="service-item">
+      <div *ngFor="let service of services"
+           class="service-item"
+           (click)="showService(service)"
+           [ngClass]="{'selected': selectedService?.title === service.title}">
         <i [class]="service.icon"></i>
         <p>{{ service.title }}</p>
       </div>
